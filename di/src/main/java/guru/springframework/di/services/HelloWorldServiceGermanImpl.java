@@ -4,7 +4,7 @@ public class HelloWorldServiceGermanImpl implements HelloWorldService{
 
 	@Override
 	public String getGreeting() {
-		return "Guten tag";
+		return "Hello Welt!!!";
 	}
 
 }
