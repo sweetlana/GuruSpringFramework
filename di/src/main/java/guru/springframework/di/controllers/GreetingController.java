@@ -7,26 +7,21 @@ import org.springframework.stereotype.Controller;
 import guru.springframework.di.services.HelloWorldService;
 import guru.springframework.di.services.HelloWorldServiceGermanImpl;
 
-@Controller
+//@Controller
 public class GreetingController {
 	
 	private HelloWorldService helloWorldService;
 	private HelloWorldService helloWorldServiceGerman;
 	private HelloWorldService helloWorldServiceFrench;
 
-	@Autowired
 	public void setHelloWorldService(HelloWorldService helloWorldService) {
 		this.helloWorldService = helloWorldService;
 	}
 
-	@Autowired
-	@Qualifier("helloWorldServiceGerman")
 	public void setHelloWorldServiceGerman(HelloWorldService helloWorldServiceGerman) {
 		this.helloWorldServiceGerman = helloWorldServiceGerman;
 	}
 	
-	@Autowired
-	@Qualifier("french")
 	public void setHelloWorldServiceFrench(HelloWorldService helloWorldServiceFrench) {
 		this.helloWorldServiceFrench = helloWorldServiceFrench;
 	}
